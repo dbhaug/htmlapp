@@ -1,0 +1,31 @@
+// Place all the styles related to the echo controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+@import "bootstrap";
+html {
+	background-color:blue;
+	color:white;
+}
+div.container {
+	width: 37.5%;
+	float:right;
+	color:white;
+}
+
+div.table {
+	width: 25%;
+	float:left;
+	color:white;
+}
+
+hr {
+	width: 90%;
+	size: 2;
+	color:white;
+}
+table {
+	border-top: 2;
+	border-bottom: 2;
+	border-right: 2;
+	border-left: 2;
+}
