@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>News</title>
+		<script src="http://code.jquery.com/jquery.js" type="text/javascript"></script>
+		<link href="/assets/bootstrap.css?body=1" media="all" rel="stylesheet" type="text/css" />
+		<script src="/assets/bootstrap.js?body=1" type="text/javascript"></script>
+		<script src="/assets/application.js?body=1" type="text/javascript"></script>
+		<style type="text/css">
+			#sidebar {
+				float:right;
+				color:blue;
+				background-color: hsl(0,0%,80%);
+				border-width: 10px;
+				border-radius: 6px;
+				padding:10px;
+				width: 180px;
+			}
+			label {
+				font-size: 19pt;
+				font-weight: bold;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="hero-unit">
+			<div class="page-header">
+				<h1>News</h1>
+			</div>
+			<div class="row-fluid">
+				<div class="span9">
+					<div class="row">
+						<div class="tabbable">
+							<ul class="nav nav-tabs">
+								<li class="active"><a href="#basketball" data-toggle="tab">Basketball</a></li>
+								<li><a href="#baseball" data-toggle="tab">Baseball</a></li>
+								<li><a href="#football" data-toggle="tab">Football</a></li>
+								<li><a href="#golf" data-toggle="tab">Golf</a></li>
+							</ul>
+							<div class="tab-content">
+								<div class="tab-pane active" id="basketball">
+									<h4>Basketball</h4>
+									<p>
+									<%= @basketball %><br/>
+									<%= image_tag("http://www.interbasket.net/news/wp-content/uploads/kobe_20130102124036177_660_.jpg", :class=>"img-rounded") %>
+								</div>
+								<div class="tab-pane" id="baseball">
+									<h4>Baseball</h4>
+									<p>
+									<%= @baseball %>
+									</p>
+								</div>
+								<div class="tab-pane" id="football">
+									<h4>Football</h4>
+									<p>
+									<%= @football %>
+									</p>
+								</div>
+								<div class="tab-pane" id="golf">
+									<h4>Golf</h4>
+									<p>
+									<%= @golf %>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<span class="label label-important">Requirements</span>
+						<table class="table table-striped">
+							<thead>
+								<tr>
+									<th>Description</th>
+									<th>Points</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Use only bootstrap classes (except sidebar) </td>
+									<td>5</td>
+								</tr>
+								<tr>
+									<td>Must use hero-unit class for main container</td>
+									<td>1</td>
+								</tr>
+								<tr>
+									<td>Must bootstrap "grid" classes to achieve column layout</td>
+									<td>3</td>
+								</tr>
+								<tr>
+									<td>Use bootstrap rows where appropriate</td>
+									<td>1</td>
+								</tr>
+								<tr>
+									<td>Sidebar uses user-defined styles</td>
+									<td>2</td>
+								</tr>
+								<tr>
+									<td>Sidebar must have rounded corners</td>
+									<td>2</td>
+								</tr>
+								<tr>
+									<td>Sidebar must have hsl background</td>
+									<td>2</td>
+								</tr>
+								<tr>
+									<td>Text color in sidebar must be equivalent to tabs</td>
+									<td>2</td>
+								</tr>
+								<tr>
+									<td>Four Tabs w/content</td>
+									<td>2</td>
+								</tr>
+								<tr>
+									<td>One tab must contain an rounded image</td>
+									<td>2</td>
+								</tr>
+								<tr>
+									<td>"Requirements" must be an 'important' label</td>
+									<td>1</td>
+								</tr>
+								<tr>
+									<td>"Notes" must be an 'success' label</td>
+									<td>1</td>
+								</tr>
+								<tr>
+									<td>Table must have a heading</td>
+									<td>1</td>
+								</tr>
+								<tr>
+									<td>Table rows must alternate</td>
+									<td>1</td>
+								</tr>
+								<tr>
+									<td>Footnotes in sidebar must be badges</td>
+									<td>1</td>
+								</tr>
+								<tr>
+									<td>Use a page-header for your banner</td>
+									<td>1</td>
+								</tr>
+								<tr>
+									<td>Use abbrev tag to mark at least one word/phrase per tab</td>
+									<td>2</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="row">
+						<span class="label label-success">Notes</span>
+						<%= render 'layouts/table' %>
+					</div>
+				</div>
+				<div id="sidebar">
+					<label>In Other News</label>
+					<p>
+					<%= @sidebar %>
+					</p>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,4 +1,9 @@
 HtmlAndCss::Application.routes.draw do
+  resources :requirements
+
+
+  get "news/display"
+
   match '/echo', to: 'echo#echo'
 
   root :to => 'echo#show'
