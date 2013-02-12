@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-<html>
+
 	<head>
 		<title>News</title>
 		<script src="http://code.jquery.com/jquery.js" type="text/javascript"></script>
@@ -67,88 +66,11 @@
 					</div>
 					<div class="row">
 						<span class="label label-important">Requirements</span>
-						<table class="table table-striped">
-							<thead>
-								<tr>
-									<th>Description</th>
-									<th>Points</th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr>
-									<td>Use only bootstrap classes (except sidebar) </td>
-									<td>5</td>
-								</tr>
-								<tr>
-									<td>Must use hero-unit class for main container</td>
-									<td>1</td>
-								</tr>
-								<tr>
-									<td>Must bootstrap "grid" classes to achieve column layout</td>
-									<td>3</td>
-								</tr>
-								<tr>
-									<td>Use bootstrap rows where appropriate</td>
-									<td>1</td>
-								</tr>
-								<tr>
-									<td>Sidebar uses user-defined styles</td>
-									<td>2</td>
-								</tr>
-								<tr>
-									<td>Sidebar must have rounded corners</td>
-									<td>2</td>
-								</tr>
-								<tr>
-									<td>Sidebar must have hsl background</td>
-									<td>2</td>
-								</tr>
-								<tr>
-									<td>Text color in sidebar must be equivalent to tabs</td>
-									<td>2</td>
-								</tr>
-								<tr>
-									<td>Four Tabs w/content</td>
-									<td>2</td>
-								</tr>
-								<tr>
-									<td>One tab must contain an rounded image</td>
-									<td>2</td>
-								</tr>
-								<tr>
-									<td>"Requirements" must be an 'important' label</td>
-									<td>1</td>
-								</tr>
-								<tr>
-									<td>"Notes" must be an 'success' label</td>
-									<td>1</td>
-								</tr>
-								<tr>
-									<td>Table must have a heading</td>
-									<td>1</td>
-								</tr>
-								<tr>
-									<td>Table rows must alternate</td>
-									<td>1</td>
-								</tr>
-								<tr>
-									<td>Footnotes in sidebar must be badges</td>
-									<td>1</td>
-								</tr>
-								<tr>
-									<td>Use a page-header for your banner</td>
-									<td>1</td>
-								</tr>
-								<tr>
-									<td>Use abbrev tag to mark at least one word/phrase per tab</td>
-									<td>2</td>
-								</tr>
-							</tbody>
-						</table>
+						<%= render 'layouts/table' %>
 					</div>
 					<div class="row">
 						<span class="label label-success">Notes</span>
-						<%= render 'layouts/table' %>
+						
 					</div>
 				</div>
 				<div id="sidebar">
@@ -160,4 +82,3 @@
 			</div>
 		</div>
 	</body>
-</html>

@@ -1,10 +1,10 @@
 module NewsHelper
 	def requirements_table
 		html=""
-		Requirement.find_each do |description, points|
+		Requirement.find_each do |req|
 			html+="<tr>
-				<td>#{description}</td>
-				<td>#{points}</td>
+				<td> #{req.description} </td>
+				<td> #{req.points} </td>
 			</tr>"
 		end
 		html.html_safe
